@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Paradise Escape.iml" filepath="$PROJECT_DIR$/.idea/Paradise Escape.iml" />
+      <module fileurl="file://$PROJECT_DIR$/paradiseEscapeBackend/paradiseEscapeBackend.iml" filepath="$PROJECT_DIR$/paradiseEscapeBackend/paradiseEscapeBackend.iml" />
     </modules>
   </component>
 </project>

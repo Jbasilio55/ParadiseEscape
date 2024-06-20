@@ -6,7 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 /**
  * @author Jorge Basilio
@@ -23,10 +23,10 @@ public class BookedRoom {
     private Long bookingId;
 
     @Column(name = "check_In")
-    private LocalDateTime checkedInDate;
+    private LocalDate checkedInDate;
 
     @Column(name = "check_Out")
-    private LocalDateTime checkedOutDate;
+    private LocalDate checkedOutDate;
 
     @Column(name = "guest_FullName")
     private String guestFullName;
@@ -51,7 +51,7 @@ public class BookedRoom {
     private Room room;
 
     public void calculateTotalNumOfGuest() {
-        this.totalNumOfGuest = this.numOfAdults * this.numOfChildren;
+        this.totalNumOfGuest = this.numOfAdults + this.numOfChildren;
     }
 
     public void setNumOfAdults(int numOfAdults) {
